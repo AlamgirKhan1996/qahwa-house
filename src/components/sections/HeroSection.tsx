@@ -14,13 +14,14 @@ import { cn } from '@/lib/utils';
 
 // ── Decorative SVG: Geometric Star ───────────────────────────
 
-function IslamicStar({ className }: { className?: string }) {
+function IslamicStar({ className, style }: { className?: string; style?: React.CSSProperties }) {
   return (
     <svg
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      style={style}
       aria-hidden="true"
     >
       {/* 8-pointed star */}
